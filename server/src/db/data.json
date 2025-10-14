@@ -1,0 +1,471 @@
+{
+  "users": [
+    {
+      "id": "u_analia",
+      "username": "analia",
+      "createdAt": "2025-09-01T12:00:00Z"
+    },
+    {
+      "id": "u_ramiro",
+      "username": "ramiro",
+      "createdAt": "2025-09-01T12:00:00Z"
+    },
+    {
+      "id": "u_sofia",
+      "username": "sofia",
+      "createdAt": "2025-09-01T12:00:00Z"
+    },
+    {
+      "id": "u_martin",
+      "username": "martin",
+      "createdAt": "2025-09-01T12:00:00Z"
+    },
+    {
+      "id": "u_carlos",
+      "username": "carlos",
+      "createdAt": "2025-09-01T12:00:00Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p_1",
+      "title": "Mejorar iluminación en plazas públicas",
+      "summary": "Proyecto para aumentar la seguridad nocturna mediante mejor iluminación.",
+      "body": "Proyecto para aumentar la seguridad nocturna mediante mejor iluminación. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_carlos",
+      "createdAt": "2025-09-24T21:51:52.385Z"
+    },
+    {
+      "id": "p_2",
+      "title": "Implementar ciclovías en avenidas principales",
+      "summary": "Iniciativa para promover el ciclismo como medio de transporte sostenible.",
+      "body": "Iniciativa para promover el ciclismo como medio de transporte sostenible. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_ramiro",
+      "createdAt": "2025-09-18T21:51:52.386Z"
+    },
+    {
+      "id": "p_3",
+      "title": "Reducir residuos plásticos en el barrio",
+      "summary": "Campaña para reducir el impacto ambiental de los plásticos.",
+      "body": "Campaña para reducir el impacto ambiental de los plásticos. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_carlos",
+      "createdAt": "2025-10-09T21:51:52.386Z"
+    },
+    {
+      "id": "p_4",
+      "title": "Crear espacios verdes en zonas urbanas",
+      "summary": "Plan para crear áreas verdes en espacios urbanos desocupados.",
+      "body": "Plan para crear áreas verdes en espacios urbanos desocupados. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_carlos",
+      "createdAt": "2025-09-22T21:51:52.386Z"
+    },
+    {
+      "id": "p_5",
+      "title": "Mejorar el transporte público local",
+      "summary": "Mejoras en el sistema de transporte público para mayor eficiencia.",
+      "body": "Mejoras en el sistema de transporte público para mayor eficiencia. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_analia",
+      "createdAt": "2025-09-29T21:51:52.386Z"
+    },
+    {
+      "id": "p_6",
+      "title": "Instalar cámaras de seguridad en parques",
+      "summary": "Instalación de cámaras para prevenir delitos en áreas recreativas.",
+      "body": "Instalación de cámaras para prevenir delitos en áreas recreativas. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_sofia",
+      "createdAt": "2025-10-01T21:51:52.386Z"
+    },
+    {
+      "id": "p_7",
+      "title": "Promover el reciclaje en escuelas",
+      "summary": "Programa educativo para enseñar reciclaje desde temprana edad.",
+      "body": "Programa educativo para enseñar reciclaje desde temprana edad. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_carlos",
+      "createdAt": "2025-09-16T21:51:52.386Z"
+    },
+    {
+      "id": "p_8",
+      "title": "Reparar baches en calles principales",
+      "summary": "Reparación de carreteras dañadas para mejorar la circulación.",
+      "body": "Reparación de carreteras dañadas para mejorar la circulación. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_sofia",
+      "createdAt": "2025-10-13T21:51:52.386Z"
+    },
+    {
+      "id": "p_9",
+      "title": "Fomentar el arbolado urbano",
+      "summary": "Plantación de árboles para mejorar la calidad del aire.",
+      "body": "Plantación de árboles para mejorar la calidad del aire. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_analia",
+      "createdAt": "2025-10-06T21:51:52.386Z"
+    },
+    {
+      "id": "p_10",
+      "title": "Implementar programas de zoonosis",
+      "summary": "Control de enfermedades transmitidas por animales.",
+      "body": "Control de enfermedades transmitidas por animales. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_carlos",
+      "createdAt": "2025-10-06T21:51:52.386Z"
+    },
+    {
+      "id": "p_11",
+      "title": "Mejorar accesibilidad en edificios públicos",
+      "summary": "Adaptaciones para personas con discapacidad en espacios públicos.",
+      "body": "Adaptaciones para personas con discapacidad en espacios públicos. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_martin",
+      "createdAt": "2025-09-24T21:51:52.386Z"
+    },
+    {
+      "id": "p_12",
+      "title": "Crear rutas peatonales seguras",
+      "summary": "Rutas seguras para peatones alejadas del tráfico.",
+      "body": "Rutas seguras para peatones alejadas del tráfico. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_carlos",
+      "createdAt": "2025-09-19T21:51:52.386Z"
+    },
+    {
+      "id": "p_13",
+      "title": "Instalar contenedores de basura inteligentes",
+      "summary": "Contenedores que optimizan la recolección de basura.",
+      "body": "Contenedores que optimizan la recolección de basura. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_ramiro",
+      "createdAt": "2025-09-14T21:51:52.386Z"
+    },
+    {
+      "id": "p_14",
+      "title": "Promover el uso de energías renovables",
+      "summary": "Transición hacia fuentes de energía limpias.",
+      "body": "Transición hacia fuentes de energía limpias. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_carlos",
+      "createdAt": "2025-10-09T21:51:52.386Z"
+    },
+    {
+      "id": "p_15",
+      "title": "Mejorar la señalización vial",
+      "summary": "Señalización clara para reducir accidentes de tránsito.",
+      "body": "Señalización clara para reducir accidentes de tránsito. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_sofia",
+      "createdAt": "2025-09-28T21:51:52.386Z"
+    },
+    {
+      "id": "p_16",
+      "title": "Crear programas de educación ambiental",
+      "summary": "Educación sobre cuidado del medio ambiente.",
+      "body": "Educación sobre cuidado del medio ambiente. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_sofia",
+      "createdAt": "2025-10-04T21:51:52.386Z"
+    },
+    {
+      "id": "p_17",
+      "title": "Instalar fuentes de agua potable",
+      "summary": "Acceso gratuito a agua potable en espacios públicos.",
+      "body": "Acceso gratuito a agua potable en espacios públicos. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_carlos",
+      "createdAt": "2025-10-02T21:51:52.386Z"
+    },
+    {
+      "id": "p_18",
+      "title": "Fomentar el turismo local sostenible",
+      "summary": "Desarrollo turístico que respeta el entorno local.",
+      "body": "Desarrollo turístico que respeta el entorno local. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_martin",
+      "createdAt": "2025-09-24T21:51:52.386Z"
+    },
+    {
+      "id": "p_19",
+      "title": "Mejorar la conectividad WiFi en espacios públicos",
+      "summary": "Conexión inalámbrica gratuita en plazas y parques.",
+      "body": "Conexión inalámbrica gratuita en plazas y parques. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_sofia",
+      "createdAt": "2025-09-24T21:51:52.386Z"
+    },
+    {
+      "id": "p_20",
+      "title": "Implementar barrido manual en zonas residenciales",
+      "summary": "Limpieza manual de calles para mantener la higiene.",
+      "body": "Limpieza manual de calles para mantener la higiene. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_sofia",
+      "createdAt": "2025-09-26T21:51:52.386Z"
+    },
+    {
+      "id": "p_21",
+      "title": "Crear huertas comunitarias",
+      "summary": "Cultivos comunitarios para promover la autosuficiencia.",
+      "body": "Cultivos comunitarios para promover la autosuficiencia. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_ramiro",
+      "createdAt": "2025-10-08T21:51:52.386Z"
+    },
+    {
+      "id": "p_22",
+      "title": "Promover la movilidad eléctrica",
+      "summary": "Incentivos para el uso de vehículos eléctricos.",
+      "body": "Incentivos para el uso de vehículos eléctricos. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_carlos",
+      "createdAt": "2025-10-13T21:51:52.386Z"
+    },
+    {
+      "id": "p_23",
+      "title": "Instalar juegos infantiles inclusivos",
+      "summary": "Juegos adaptados para niños con diferentes capacidades.",
+      "body": "Juegos adaptados para niños con diferentes capacidades. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_ramiro",
+      "createdAt": "2025-09-30T21:51:52.386Z"
+    },
+    {
+      "id": "p_24",
+      "title": "Mejorar el mantenimiento de veredas",
+      "summary": "Mantenimiento regular de aceras para seguridad peatonal.",
+      "body": "Mantenimiento regular de aceras para seguridad peatonal. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_carlos",
+      "createdAt": "2025-09-19T21:51:52.386Z"
+    },
+    {
+      "id": "p_25",
+      "title": "Crear programas de inclusión social",
+      "summary": "Iniciativas para integrar a grupos marginados.",
+      "body": "Iniciativas para integrar a grupos marginados. Este proyecto busca implementar soluciones prácticas y sostenibles para mejorar la calidad de vida en nuestra comunidad. Contamos con el apoyo de vecinos y esperamos su participación activa.",
+      "authorId": "u_analia",
+      "createdAt": "2025-09-23T21:51:52.386Z"
+    }
+  ],
+  "votes": [
+    {
+      "id": "v_1",
+      "userId": "u_ramiro",
+      "projectId": "p_1",
+      "value": -1
+    },
+    {
+      "id": "v_2",
+      "userId": "u_analia",
+      "projectId": "p_1",
+      "value": 1
+    },
+    {
+      "id": "v_3",
+      "userId": "u_sofia",
+      "projectId": "p_2",
+      "value": -1
+    },
+    {
+      "id": "v_4",
+      "userId": "u_analia",
+      "projectId": "p_2",
+      "value": 1
+    },
+    {
+      "id": "v_5",
+      "userId": "u_martin",
+      "projectId": "p_2",
+      "value": 1
+    },
+    {
+      "id": "v_6",
+      "userId": "u_sofia",
+      "projectId": "p_3",
+      "value": -1
+    },
+    {
+      "id": "v_7",
+      "userId": "u_ramiro",
+      "projectId": "p_4",
+      "value": -1
+    },
+    {
+      "id": "v_8",
+      "userId": "u_analia",
+      "projectId": "p_4",
+      "value": -1
+    },
+    {
+      "id": "v_9",
+      "userId": "u_sofia",
+      "projectId": "p_4",
+      "value": 1
+    },
+    {
+      "id": "v_10",
+      "userId": "u_martin",
+      "projectId": "p_7",
+      "value": -1
+    },
+    {
+      "id": "v_11",
+      "userId": "u_sofia",
+      "projectId": "p_7",
+      "value": 1
+    },
+    {
+      "id": "v_12",
+      "userId": "u_ramiro",
+      "projectId": "p_7",
+      "value": 1
+    },
+    {
+      "id": "v_13",
+      "userId": "u_ramiro",
+      "projectId": "p_9",
+      "value": 1
+    },
+    {
+      "id": "v_14",
+      "userId": "u_sofia",
+      "projectId": "p_9",
+      "value": 1
+    },
+    {
+      "id": "v_15",
+      "userId": "u_martin",
+      "projectId": "p_10",
+      "value": -1
+    },
+    {
+      "id": "v_16",
+      "userId": "u_analia",
+      "projectId": "p_11",
+      "value": -1
+    },
+    {
+      "id": "v_17",
+      "userId": "u_analia",
+      "projectId": "p_12",
+      "value": -1
+    },
+    {
+      "id": "v_18",
+      "userId": "u_ramiro",
+      "projectId": "p_12",
+      "value": 1
+    },
+    {
+      "id": "v_19",
+      "userId": "u_martin",
+      "projectId": "p_12",
+      "value": -1
+    },
+    {
+      "id": "v_20",
+      "userId": "u_analia",
+      "projectId": "p_13",
+      "value": -1
+    },
+    {
+      "id": "v_21",
+      "userId": "u_analia",
+      "projectId": "p_15",
+      "value": -1
+    },
+    {
+      "id": "v_22",
+      "userId": "u_ramiro",
+      "projectId": "p_15",
+      "value": 1
+    },
+    {
+      "id": "v_23",
+      "userId": "u_martin",
+      "projectId": "p_15",
+      "value": 1
+    },
+    {
+      "id": "v_24",
+      "userId": "u_sofia",
+      "projectId": "p_18",
+      "value": -1
+    },
+    {
+      "id": "v_25",
+      "userId": "u_ramiro",
+      "projectId": "p_18",
+      "value": 1
+    },
+    {
+      "id": "v_26",
+      "userId": "u_carlos",
+      "projectId": "p_18",
+      "value": -1
+    },
+    {
+      "id": "v_27",
+      "userId": "u_analia",
+      "projectId": "p_20",
+      "value": 1
+    },
+    {
+      "id": "v_28",
+      "userId": "u_carlos",
+      "projectId": "p_21",
+      "value": 1
+    },
+    {
+      "id": "v_29",
+      "userId": "u_martin",
+      "projectId": "p_21",
+      "value": 1
+    },
+    {
+      "id": "v_30",
+      "userId": "u_sofia",
+      "projectId": "p_21",
+      "value": 1
+    },
+    {
+      "id": "v_31",
+      "userId": "u_analia",
+      "projectId": "p_22",
+      "value": -1
+    },
+    {
+      "id": "v_32",
+      "userId": "u_ramiro",
+      "projectId": "p_22",
+      "value": 1
+    },
+    {
+      "id": "v_33",
+      "userId": "u_analia",
+      "projectId": "p_24",
+      "value": 1
+    },
+    {
+      "id": "v_34",
+      "userId": "u_ramiro",
+      "projectId": "p_24",
+      "value": 1
+    },
+    {
+      "id": "v_35",
+      "userId": "u_sofia",
+      "projectId": "p_24",
+      "value": 1
+    },
+    {
+      "id": "v_36",
+      "userId": "u_ramiro",
+      "projectId": "p_25",
+      "value": 1
+    },
+    {
+      "id": "v_37",
+      "userId": "u_carlos",
+      "projectId": "p_25",
+      "value": 1
+    },
+    {
+      "id": "uid_27e8dee9-a53e-4c86-ae07-7d725014c972_p_22",
+      "userId": "uid_27e8dee9-a53e-4c86-ae07-7d725014c972",
+      "projectId": "p_22",
+      "value": 1
+    },
+    {
+      "id": "uid_27e8dee9-a53e-4c86-ae07-7d725014c972_p_8",
+      "userId": "uid_27e8dee9-a53e-4c86-ae07-7d725014c972",
+      "projectId": "p_8",
+      "value": -1
+    }
+  ],
+  "_meta": {
+    "seededAt": "2025-10-14T21:51:52.387Z",
+    "version": 1
+  }
+}

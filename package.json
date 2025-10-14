@@ -1,0 +1,26 @@
+{
+  "name": "carpinchos-deciden-nea",
+  "version": "1.0.0",
+  "main": "server/src/index.js",
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "build": "cd client && npm install && npm run build",
+    "start": "NODE_ENV=production node server/src/index.js",
+    "dev:server": "nodemon server/src/index.js",
+    "dev:client": "cd client && vite",
+    "dev": "concurrently \"npm:dev:server\" \"npm:dev:client\"",
+    "seed": "node server/src/db/seed.js",
+    "reset:db": "node server/src/db/seed.js --reset"
+  },
+  "keywords": ["participacion", "ciudadana", "nea", "argentina"],
+  "author": "Adrian GM",
+  "license": "ISC",
+  "description": "MVP web para participación vecinal en el NEA - CARPINCHOS DECIDEN",
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.10",
+    "vite": "^7.1.7"
+  }
+}

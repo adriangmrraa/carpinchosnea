@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{ color-scheme: light; }
+body{ @apply bg-bg text-ink antialiased; }
+.container-app{ @apply max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8; }
+
+/* UI utilities */
+.card{ @apply bg-surface rounded-2xl shadow-smsoft border border-line/60; }
+.btn{ @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 transition-all duration-soft ease-soft; }
+.btn-primary{ @apply btn bg-primary text-white shadow-smsoft hover:-translate-y-0.5 hover:shadow-mdsoft active:scale-95; }
+.btn-ghost{ @apply btn bg-surface2 text-ink hover:-translate-y-0.5; }
+.input,.select,.textarea{ @apply w-full rounded-lg border border-line bg-surface px-4 py-3 placeholder:text-inkSoft focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all; }
+.badge{ @apply inline-flex items-center gap-2 rounded-full border border-line bg-surface2 px-3 py-1 text-[12px] text-inkSoft; }
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@layer utilities {
+  /* skeleton */
+  .skel{ @apply rounded-2xl bg-gradient-to-r from-surface2 via-[#ECE9F1] to-surface2 bg-[length:200%_100%]; animation: shimmer 1.2s linear infinite; }
+}

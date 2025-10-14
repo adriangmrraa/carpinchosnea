@@ -1,0 +1,1 @@
+export const Badge = ({ className="", ...p }) => <span className={`badge ${className}`} {...p}/>;
