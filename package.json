@@ -3,7 +3,7 @@
   "private": true,
   "engines": { "node": ">=20.19.5" },
   "scripts": {
-    "build": "npm --prefix client ci && npm --prefix client run build",
+    "build": "npm --prefix client run build",
     "start": "NODE_ENV=production node server/src/index.js",
     "dev": "concurrently -n CLIENT,SERVER -c magenta,cyan \"npm --prefix client run dev\" \"npm --prefix server run dev\"",
     "seed": "node server/src/db/seed.js",
