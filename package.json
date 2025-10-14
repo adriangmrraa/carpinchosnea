@@ -1,33 +1,16 @@
 {
-  "name": "carpinchos-deciden-nea",
-  "version": "1.0.0",
+  "name": "carpinchosnea",
   "private": true,
-  "main": "server/src/index.js",
-  "engines": {
-    "node": ">=20.19.5"
-  },
+  "engines": { "node": ">=20.19.5" },
   "scripts": {
     "build": "npm --prefix client ci && npm --prefix client run build",
     "start": "NODE_ENV=production node server/src/index.js",
-    "dev:server": "nodemon server/src/index.js",
-    "dev:client": "cd client && vite",
-    "dev": "concurrently \"npm:dev:server\" \"npm:dev:client\"",
+    "dev": "concurrently -n CLIENT,SERVER -c magenta,cyan \"npm --prefix client run dev\" \"npm --prefix server run dev\"",
     "seed": "node server/src/db/seed.js",
-    "reset:db": "node server/src/db/seed.js --reset"
+    "reset:db": "rimraf /tmp/data.json || true && npm run seed"
   },
-  "keywords": ["participacion", "ciudadana", "nea", "argentina"],
-  "author": "Adrian GM",
-  "license": "ISC",
-  "description": "MVP web para participación vecinal en el NEA - CARPINCHOS DECIDEN",
-  "dependencies": {
-    "concurrently": "^9.2.1",
-    "nodemon": "^3.1.10",
-    "vite": "^7.1.7",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "lowdb": "^7.0.1",
-    "minimist": "^1.2.8",
-    "uuid": "^13.0.0",
-    "nanoid": "^5.0.9"
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "rimraf": "^5.0.0"
   }
 }

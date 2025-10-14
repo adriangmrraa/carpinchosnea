@@ -1,23 +1,22 @@
-const { Low } = require('lowdb');
-const { JSONFile } = require('lowdb/node');
-const path = require('path');
+import { JSONFile, Low } from 'lowdb'
+import path from 'node:path'
+import fs from 'node:fs'
 
-// Usar /tmp para Render (writable), o local en desarrollo
-const file = process.env.RENDER ? '/tmp/data.json' : path.join(__dirname, 'data.json');
-const adapter = new JSONFile(file);
-const db = new Low(adapter, {});
+const DATA_DIR = process.env.DATA_DIR || '/tmp'
+fs.mkdirSync(DATA_DIR, { recursive: true })
+const DATA_FILE = path.join(DATA_DIR, 'data.json')
+const defaultData = { users: [], projects: [], votes: [], _meta: {} }
 
-async function initDb() {
-  await db.read();
-  if (!db.data || !db.data._meta) {
-    db.data = {
-      users: [],
-      projects: [],
-      votes: [],
-      _meta: { seededAt: null, version: 1 }
-    };
-    await db.write();
+const adapter = new JSONFile(DATA_FILE)
+export const db = new Low(adapter, defaultData)
+
+export async function initDB(seedFn) {
+  await db.read()
+  const needsSeed = !db.data || !db.data.projects || db.data.projects.length === 0
+  if (needsSeed && typeof seedFn === 'function') {
+    await seedFn(db)
+    db.data._meta = { seededAt: new Date().toISOString(), ephemeral: true }
+    await db.write()
   }
+  return db
 }
-
-module.exports = { db, initDb };

@@ -1,39 +1,18 @@
-import { getOrCreateUid, getUsername } from "../session/uid";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api';
 
-const API_BASE = import.meta.env.VITE_API_BASE || "/api";
-
-async function request(path, { method = "GET", headers = {}, body, signal } = {}) {
-  const url = `${API_BASE}${path}`;
-  const uid = getOrCreateUid();
-  const uname = getUsername();
-
-  const res = await fetch(url, {
+export async function api(path, { method = 'GET', body, headers = {} } = {}) {
+  const uid = localStorage.getItem('carpinchos.uid') || '';
+  const username = localStorage.getItem('carpinchos.username') || '';
+  const res = await fetch(`${API_BASE}${path}`, {
     method,
     headers: {
-      "X-User-Id": uid,
-      "X-User-Name": uname,
-      ...(body && !headers["Content-Type"] ? { "Content-Type": "application/json" } : {}),
-      ...headers,
+      'Content-Type': 'application/json',
+      'X-User-Id': uid,
+      'X-User-Name': username,
+      ...headers
     },
-    body: body ? (typeof body === "string" ? body : JSON.stringify(body)) : undefined,
-    signal
+    body: body ? JSON.stringify(body) : undefined
   });
-
-  const ct = res.headers.get("content-type") || "";
-  if (!res.ok) {
-    const msg = ct.includes("application/json") ? (await res.json()).message : await res.text();
-    throw new Error(msg || `HTTP ${res.status}`);
-  }
-  if (!ct.includes("application/json")) {
-    const txt = await res.text();
-    throw new Error(`Respuesta no JSON: ${txt.slice(0,120)}`);
-  }
+  if (!res.ok) throw new Error(await res.text().catch(() => `HTTP ${res.status}`));
   return res.json();
 }
-
-export const api = {
-  listProjects: (q) => request(`/projects?${new URLSearchParams(q)}`),
-  getProject: (id) => request(`/projects/${id}`),
-  createProject: (body) => request(`/projects`, { method: "POST", body }),
-  vote: (id, value) => request(`/projects/${id}/vote`, { method: "POST", body: { value } }),
-};

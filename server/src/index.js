@@ -1,40 +1,37 @@
-const express = require('express');
-const cors = require('cors');
-const path = require('path');
-const projectRoutes = require('./routes/projects');
-const voteRoutes = require('./routes/votes');
+import express from 'express'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+import cors from 'cors'
+import projectsRouter from './routes/projects.js'
+import votesRouter from './routes/votes.js'
+import { initDB } from './db/lowdb.js'
+import seed from './db/seed.js'
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
-// Middleware
-app.use(cors({
-  origin: process.env.NODE_ENV === 'production' ? false : 'http://localhost:5173', // Vite dev server
-}));
-app.use(express.json());
+const app = express()
+app.use(express.json())
 
-// Routes API
-app.use('/api/projects', projectRoutes);
-app.use('/api/projects', voteRoutes);
-
-// Servir archivos estáticos del cliente en producción
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../../client/dist')));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../client/dist/index.html'));
-  });
-} else {
-  // Fallback para desarrollo si no hay cliente corriendo
-  app.get('/', (req, res) => {
-    res.send('API Server Running');
-  });
+// CORS solo en dev
+if (process.env.NODE_ENV !== 'production') {
+  app.use(cors({ origin: 'http://localhost:5173' }))
 }
 
-// Initialize DB and start server
-(async () => {
-  const { initDb } = require('./db/lowdb');
-  await initDb();
-  app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-  });
-})();
+// API
+app.use('/api/projects', projectsRouter)
+app.use('/api/projects', votesRouter) // p.ej. POST /:id/vote
+
+// Healthcheck para Render
+app.get('/healthz', (_, res) => res.status(200).send('ok'))
+
+// Servir frontend en prod
+const clientDist = path.join(__dirname, '..', '..', 'client', 'dist')
+app.use(express.static(clientDist))
+app.get('*', (_, res) => res.sendFile(path.join(clientDist, 'index.html')))
+
+// Start
+const PORT = process.env.PORT || 3000
+initDB(seed).then(() => {
+  app.listen(PORT, () => console.log(`Server running on :${PORT}`))
+})
