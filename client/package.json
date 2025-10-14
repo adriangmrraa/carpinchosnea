@@ -12,23 +12,14 @@
   "description": "Frontend React para CARPINCHOS DECIDEN - Participación Vecinal NEA",
   "dependencies": {
     "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.21",
     "framer-motion": "^12.23.22",
     "lucide-react": "^0.544.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "react-hot-toast": "^2.6.0",
-    "react-router-dom": "^7.9.3"
-  },
-  "dependencies": {
-    "@vitejs/plugin-react": "^5.0.4",
-    "framer-motion": "^12.23.22",
-    "lucide-react": "^0.544.0",
+    "postcss": "^8.5.6",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-hot-toast": "^2.6.0",
     "react-router-dom": "^7.9.3",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
     "vite": "^7.1.7"
   }
