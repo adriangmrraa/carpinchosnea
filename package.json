@@ -1,13 +1,14 @@
 {
   "name": "carpinchos-deciden-nea",
   "version": "1.0.0",
+  "private": true,
   "main": "server/src/index.js",
   "engines": {
-    "node": "20.x"
+    "node": ">=20.19.5"
   },
   "scripts": {
-    "build": "cd client && npm install && npm run build",
-    "start": "node server/src/index.js",
+    "build": "npm --prefix client ci && npm --prefix client run build",
+    "start": "NODE_ENV=production node server/src/index.js",
     "dev:server": "nodemon server/src/index.js",
     "dev:client": "cd client && vite",
     "dev": "concurrently \"npm:dev:server\" \"npm:dev:client\"",
