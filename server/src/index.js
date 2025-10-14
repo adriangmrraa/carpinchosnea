@@ -23,6 +23,11 @@ if (process.env.NODE_ENV === 'production') {
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../../client/dist/index.html'));
   });
+} else {
+  // Fallback para desarrollo si no hay cliente corriendo
+  app.get('/', (req, res) => {
+    res.send('API Server Running');
+  });
 }
 
 // Initialize DB and start server
